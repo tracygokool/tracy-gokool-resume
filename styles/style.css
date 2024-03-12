@@ -66,20 +66,17 @@ End CSS Reset
 */
 
 body{
-    
     margin: 0px 0px 0px 0px;
     background-color: #699057;    
 }
 
 header,
  footer {
-    
     color: #FFFFFF;
     font-family: "Vollkorn", serif;
     font-optical-sizing: auto;
     font-style: normal;
     overflow: hidden;
-    
  }
 
 header h1 {
@@ -140,8 +137,7 @@ article h2{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 25px;
-   
+    font-size: 30px;
     color: #699057;
     margin-bottom: 15px;
     padding-bottom: 2px;
@@ -150,17 +146,27 @@ article h2{
 
 article h3{
     font-size: 20px;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;   
 }
 
 article p {
 line-height: 20px;
-padding-bottom: 15px;
+padding-bottom: 20px;
 }
 
-.dates{
+article ul{
+padding-bottom: 10px;
+line-height: 20px;
+text-align: center;
+}
+
+article h4{
     float: right;
+    font-style: italic;
+}
+
+article div{
+    text-align: center;
 }
 
 header,
@@ -170,12 +176,48 @@ article {
     padding-right: 12.5%;
 }
 
+.row{
+    margin: 8px -16px;
+}
+
+.row,
+.row >.column{
+    padding: 8px;
+}
+
+.column{
+    float: left;
+    width: 25%;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+    
+}
+
+article a{
+    text-decoration: none;
+    border: solid 2px #FFFFFF;
+
+}
+
+article a:hover{
+    color: blue;
+    
+}
+
+.content{
+    padding: 10px;
+    background-color:rgb(240, 234, 217) ;
+}
+
 footer{
     font-weight: 25;
     padding-top: 40px;
     font-size: 15px;
     background-color: #699057;
-   
 }
 
 footer a {
@@ -185,7 +227,6 @@ footer a {
     padding: 10px 20px 10px 20px; 
     margin-left: 5px;
     margin-right: 5px;
-   
 }
 
 footer a.active{
