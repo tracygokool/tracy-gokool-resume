@@ -199,13 +199,12 @@ article {
 
 article a{
     text-decoration: none;
-    border: solid 2px #FFFFFF;
+    color:rgba(255, 0, 166, 0.491);
 
 }
 
 article a:hover{
-    color: blue;
-    
+    color: #699057;
 }
 
 .content{
