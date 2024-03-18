@@ -68,17 +68,15 @@ End CSS Reset
 body{
     margin: 0px 0px 0px 0px;
     background-color: #699057;    
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
 }
 
 header,
  footer {
     color: #FFFFFF;
-    font-family: "Playfair Display", serif;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
     font-style: normal;
     overflow: hidden;
-    
  }
 
 header h1 {
@@ -89,41 +87,49 @@ header h1 {
     width: fit-content;
     padding: 20px 10px;
     border-top: 6px solid rgb(255, 0, 166);
-    margin-bottom: 130px; /*To make header links responsive*/
-    
 }
 
 header h2{
     padding: 20px 0px 20px 0px;
     text-align: right;
     font-size: 24px;
+    white-space: nowrap;
 }
 
-header a{
-    color: #FFFFFF;
+
+nav,
+footer> nav{
+    display: flex;
+    justify-content: right;
+    background-color: #699057
+}
+
+nav a,
+footer > nav a{
+    font-weight: 25;
     padding: 10px 20px 10px 20px;
-    text-align: center;
-    float: right;
+    font-size: 15px;
+    color: #FFFFFF;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 450;
-    border: 5px solid #699057;
 }
 
-header a.active {
+nav a.active,
+footer> nav a.active{
     background-color: rgb(255, 0, 166);
-    border: 5px solid #FFFFFF;
+    border: 6px solid #FFFFFF;
 }
 
-header a:hover {
+nav a:hover,
+footer > nav a:hover{
     background-color:rgba(255, 0, 166, 0.491);
 }
 
 article{
     background-color: #FFFFFF;
     font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 450;
     font-style:normal;
     padding-top: 10px;
@@ -176,8 +182,10 @@ article div{
 }
 
 header,
-footer, 
-article {
+nav,
+article,
+footer 
+ {
     padding-left: 12.5%;
     padding-right: 12.5%;
 }
@@ -215,100 +223,115 @@ article a:hover{
 
 .content{
     padding: 10px;
-    background-color:rgb(240, 234, 217) ;
-    min-height: 650px;
+    background-color:rgb(240, 234, 217);
+    min-height: 560px;
 }
 
 footer{
-    padding-top: 40px;
+    font-weight: 25;
     font-size: 15px;
     background-color: #699057;
-}
-
-footer a {
     text-decoration: none;
-    float: right;
     color: #FFFFFF;
-    padding: 10px 20px 10px 20px; 
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 40=50;
+    margin: 10px;
 }
 
-footer h1{
-    
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: white;
-    margin-bottom: 15px;
-    padding-bottom: 2px;  
+footer > nav a{
+  margin-left: 70px;
 }
 
-footer a.active{
-    color:#699057 ;
-   background-color: #FFFFFF;
-}
-
-footer a:hover{
-    background-color:rgba(255, 0, 166, 0.491);
-}
-
-input[type='text'],
-select,
-textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #699057;
-    border-radius: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
-
-input[type='submit'] {
+  }
+  
+  input[type=submit] {
     background-color:rgb(255, 0, 166);
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 0px;
+    border-radius: 4px;
     cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgba(255, 0, 166, 0.491);
+  }
+  
+  .container {
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #699057;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+        }
 }
 
-input[type='submit']:hover {
-    background-color: rgba(255, 0, 166, 0.491);
+input[type=submit] {
+  background-color: rgb(255, 0, 166);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(255, 0, 166, 0.491);
 }
 
 .container {
     border-radius: 0px;
     background-color: rgb(240, 234, 217);
     padding: 20px;
+    background-color: rgb(240, 234, 217);
+    padding: 20px;
+    border: 2px solid #699057;
+  }
+
+@media screen and (max-width:492px) {
+    header h2{
+        clear:left;
+        text-align:unset;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    .column {
+    .column{
         width: 50%;
+    }   
+        nav{
+        justify-content: unset;
+        flex-direction: column;
     }
 
-    header a{
-        float: none;
-        display: flex;
-        flex-direction: column;
+    nav a.active {
+        background-color:#699057;
+        border: 6px solid rgb(255, 0, 166);
     }
 }
 
+
 @media screen and (max-width: 600px) {
-    .column {
+    .column{
         width: 100%;
     }
 
-    header a{
-        float: none;
-        display: flex;
-        flex-direction: column;
+    nav a.active {
+        background-color:#699057;
+        border: 3px solid rgb(255, 0, 166);
     }
-
+   
 }
+
+
