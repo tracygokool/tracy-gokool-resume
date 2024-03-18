@@ -2,45 +2,48 @@
 <html lang="en">
      <head>
           <title>Tracy Gokool</title>
-          
-           <!--Header, Footer Text -Playfair Display-->
-               <link rel="preconnect" href="https://fonts.googleapis.com">
-               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-               <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
- 
-           <!--Article- Raleway-->
-               <link rel="preconnect" href="https://fonts.googleapis.com">
+          <!--Header, Footer Text -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+          <!--Article-->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-           <link rel="stylesheet" href ="styles/style.css"/>
+          
+          <link rel="stylesheet" href ="styles/style.css"/>
      </head>
+
      <body>
           <!--Header-->
           <header>
                <h1>Tracy  Gokool</h1>
-               <h2>STUDENT</h2>
-                    <a href = "portfolio.html" id="Portfolio">Portfolio</a>
-                    <a href = "resume.html" id="Resume">Resumé</a>
-                    <a class="active" href = "contact.html" id=" Contact">Contact</a>
-                    <a  href = "index.html" id=" Home">Home</a>
-                    
+               <h2>|STUDENT|</h2>
           </header>
+
+
+           <!--Nav Bar-->
+           <nav>   <a  href = "index.html" id=" Home">Home</a> 
+               <a href = "resume.html" id="Resume">Resumé</a>
+               <a href = "portfolio.html" id="Portfolio ">Portfolio</a>
+               <a class="active" href = "contact.html" id="Contact">Contact</a>
+          </nav>
 
           <!--Article-->
           <article>
               <h2>Contact</h2>
-
+              
               <div class="container">
                <form action="action_page.php">
-
+             
                  <label for="name"> Name</label>
                  <input   type="text"
                           id="name" 
                           name="name" 
                           placeholder="Your name.."
                />
-
+             
                  <label form ="email">Email</label>
                  <input
                      id="email"
@@ -56,23 +59,28 @@
                      type="text"
                      placeholder = "Subject"
                 />
-
+                 
                  <label for="body">Body</label>
                  <textarea id="body" name="body" placeholder="Write something.." style="height:200px">
           </textarea>
-
+             
                  <input type="submit" value="Submit">
-
+             
                </form>
              </div>
           </article>
 
      <!--Footer-->
-          <footer>
-          <h1>Tracy  Gokool</h1>
-               
-               <a href = "portfolio.html" id="Portfolio">Portfolio</a>
-               <a href = "resume.html" id="Resume">Resumé</a>
-               <a class="active" href = "contact.html" id=" Contact">Contact</a>
-               <a  href = "index.html" id=" Home">Home</a>
-          </footer>
+     
+     <footer>
+      <nav>
+          <a href="index.html" id="Home">Home</a>
+          <a href = "resume.html" id="Resume">Resumé</a>
+          <a href = "portfolio.html" id="Portfolio ">Portfolio</a>
+          <a class="active" href = "contact.html" id="Contact">Contact</a>
+     </nav>
+     <h1>Tracy Gokool</h1>
+     </footer>
+
+</body>
+</html>
