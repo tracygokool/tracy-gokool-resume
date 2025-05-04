@@ -1,0 +1,424 @@
+
+/*
+===============================================================================
+Start CSS Reset
+===============================================================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+===============================================================================
+End CSS Reset
+===============================================================================
+*/
+
+body{
+    margin: 0px 0px 0px 0px;
+    background-color:#9CAF88;   
+    font-family: "Raleway","Playfair Display", sans-serif;
+    font-style: normal;
+    
+}
+
+header,
+ footer {
+    color: #FFFFFF;
+    font-style: normal;
+    overflow: hidden;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+ }
+
+header h1 {
+    float: left;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    width: fit-content;
+    padding: 20px 10px;
+    border-top: 6px solid rgb(255, 0, 166);
+}
+
+header h2{
+    padding: 20px 0px 20px 0px;
+    text-align: right;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+nav{
+    display: flex;
+    justify-content: right;
+    background-color: #9CAF88;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav a{
+    font-weight: 470;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom:5px;
+    
+}
+
+nav a.active{
+    padding-top:15px;
+    padding-bottom: 15px;
+    background-color: rgb(255, 0, 166);
+    border: 5px solid #FFFFFF;
+    margin-bottom: 0px;
+    
+   
+}
+
+nav a:hover{
+    background-color:rgba(255, 0, 166, 0.491);
+    border-radius: 8px;
+   transition: background-color 1s ,
+   color 1s;
+  
+}
+
+article{
+    background-color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style:normal;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
+}
+
+article h1{
+    font-size: 35px;
+    font-weight: 300;
+    color: #9CAF88;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+article h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color:#9CAF88;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #9CAF88;
+}
+
+article h3{
+    font-size: 20px;
+    margin-bottom: 8px;  
+
+}
+article h5{
+    font-size: 13px;
+    font-weight: 600; 
+    font-style: italic;
+}
+
+article h5, article h3{
+    display: inline-flex;
+    margin-right: 0.5%;
+
+}
+
+article p {
+line-height: 20px;
+padding-bottom: 20px;
+margin-bottom: 5px;
+
+}
+
+article ul{
+padding-bottom: 10px;
+line-height: 20px;
+text-align: center;
+}
+
+article h4{
+    float: right;
+    font-style: italic;
+    font-size:16px;
+}
+
+article div{
+    text-align: center;
+}
+
+
+header,
+nav,
+article,
+footer 
+ {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.row{
+    margin: 8px -16px;
+}
+
+.row,
+.row >.column{
+    padding: 8px;
+}
+
+.column{
+    float:left;
+    width: 25%;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+    
+}
+
+article a{
+    text-decoration: none;
+    color:rgba(255, 0, 166, 0.491);
+
+}
+
+article a:hover{
+    opacity: .5;;
+}
+
+.content{
+    padding: 10px;
+    background-color:rgb(240, 234, 217);
+    min-height: 580px;
+}
+
+footer{
+    font-size: 18px;
+    background-color:#9CAF88;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 450;
+    padding-top: 18px;
+    padding-bottom: 40px;
+
+}
+footer a{
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 11%;
+    margin-right: 11%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+   
+}
+
+footer a.active{
+    background-color: rgb(255, 0, 166);
+    border: 5px solid #FFFFFF;
+    
+}
+
+footer a:hover{
+    background-color:rgba(255, 0, 166, 0.491);
+    border-radius: 8px;
+   transition: background-color 1s,
+   color 1s;
+}
+    
+
+footer h1{
+    padding-top: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:rgb(255, 0, 166);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgba(255, 0, 166, 0.491);
+  }
+  
+  .container {
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #699057;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+        }
+}
+
+input[type=submit] {
+  background-color: rgb(255, 0, 166);
+  color: white;
+  padding: 12px 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(255, 0, 166, 0.491);
+}
+
+.container {
+    border-radius: 8px;
+    background-color: rgb(240, 234, 217);
+    padding: 20px;
+    background-color: rgb(240, 234, 217);
+    padding: 20px;
+    border: 2px solid #699057;
+  }
+
+@media screen and (max-width:492px) {
+    header h2{
+        clear:left;
+        text-align:unset;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column{
+        width: 50%;
+    }   
+        nav{
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    footer{
+        display:flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+}
+
+button{
+        font-size: 35px; 
+        border:none;
+        width: 300px;
+        background-color:rgb(255, 0, 166);
+        color: #FFFFFF;
+        font-family:"Raleway","Playfair Display", sans-serif;
+        text-align: center;
+        margin-top: 60px;
+        height: 45px;
+        display: flex;
+        box-shadow: 4px 2px 7px rgb(255, 0, 166);
+        cursor: pointer;
+        border-radius: 10px;
+}
+
+button:hover{
+    opacity: .8;
+    box-shadow: none;
+    background-color: #699057; 
+    transition:background-color 0.15s;
+    transition: opacity 0.15s;
+}
+
+button:active{
+    background-color:rgb(255, 0, 166);
+    opacity: .6;
+    
+    
+}
