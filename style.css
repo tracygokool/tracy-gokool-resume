@@ -245,11 +245,7 @@ footer
     
 }
 
-article a{
-    text-decoration: none;
-    color:rgba(255, 0, 166, 0.491);
 
-}
 
 article a:hover{
     opacity: .5;;
@@ -392,7 +388,7 @@ input[type=submit]:hover {
     }
 }
 
-button{
+article a{
         font-size: 35px; 
         border:none;
         width: 300px;
@@ -408,7 +404,7 @@ button{
         border-radius: 10px;
 }
 
-button:hover{
+article a:hover{
     opacity: .8;
     box-shadow: none;
     background-color: #699057; 
@@ -416,9 +412,7 @@ button:hover{
     transition: opacity 0.15s;
 }
 
-button:active{
+article a:active{
     background-color:rgb(255, 0, 166);
     opacity: .6;
-    
-    
 }
